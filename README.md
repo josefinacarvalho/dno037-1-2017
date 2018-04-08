@@ -1,7 +1,5 @@
-# dno037-1-2017
+# DNO037-1
 
-### Diseño y Nuevos Medios, 2017
-
-Diseño y Nuevos Medios es un optativo de profundización (OPR).
+### Diseño y Nuevos Medios 2017, Primer Semestre
 
 Diseño, Pontificia Universidad Católica de Chile.
