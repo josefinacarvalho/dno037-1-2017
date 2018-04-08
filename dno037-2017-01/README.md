@@ -17,20 +17,20 @@ Entre módulos 1 y 4, el curso tiene un carácter teórico-práctico, mientras q
 
 #### Clases 
 
-- 8 de marzo -> https://github.com/profesorfaco/dno037-2017-01
-- 15 de marzo -> https://github.com/profesorfaco/dno037-2017-02
-- 22 de marzo -> https://github.com/profesorfaco/dno037-2017-03
-- 29 de marzo -> https://github.com/profesorfaco/dno037-2017-04
-- 4 de abril -> https://github.com/profesorfaco/dno037-2017-05
-- 12 de abril -> https://github.com/profesorfaco/dno037-2017-06
-- 26 de abril -> https://github.com/profesorfaco/dno037-2017-07
-- 3 de mayo -> https://github.com/profesorfaco/dno037-2017-08
-- 10 de mayo -> https://github.com/profesorfaco/dno037-2017-09
-- 17 de mayo -> https://github.com/profesorfaco/dno037-2017-10
-- 24 de mayo -> https://github.com/profesorfaco/dno037-2017-11
-- 31 de mayo -> https://github.com/profesorfaco/dno037-2017-12
-- 6 de junio -> https://github.com/profesorfaco/dno037-2017-13
-- 19 de junio -> https://github.com/profesorfaco/dno037-2017-14
+- 8 de marzo -> ../dno037-2017-01
+- 15 de marzo -> ../dno037-2017-02
+- 22 de marzo -> ../dno037-2017-03
+- 29 de marzo -> ../dno037-2017-04
+- 4 de abril -> ../dno037-2017-05
+- 12 de abril -> ../dno037-2017-06
+- 26 de abril -> ../dno037-2017-07
+- 3 de mayo -> ../dno037-2017-08
+- 10 de mayo -> ../dno037-2017-09
+- 17 de mayo -> ../dno037-2017-10
+- 24 de mayo -> ../dno037-2017-11
+- 31 de mayo -> ../dno037-2017-12
+- 6 de junio -> ../dno037-2017-13
+- 19 de junio -> ../dno037-2017-14
 
 ---------
 
