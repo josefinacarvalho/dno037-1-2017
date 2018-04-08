@@ -1,0 +1,93 @@
+/* VEAMOS ALGUNOS SELECTORES DE REGLA ESPECIALES */
+
+/* Con esto afectamos a todo div que tenga una clase que comienza con col- */
+div[class^="col-"] {padding-top:1.5em; padding-bottom:0.5em; background:rgba(240,240,240,.5);}
+
+/* Con esto afectamos a todo vínculo que lleva a url terminada en ".pdf" */
+a[href$=".pdf"] {color: hsl(291, 64%, 42%);}
+
+/* Con esto afectamos a todo vínculo que me dirija a alguna zona de misma página */
+a[href^="#"] {color: hsl(4, 90%, 58%);}
+
+/* Con esto afectamos a todo vínculo cuya referencia de hipertexto contenga la palabra w3school */
+a[href*="w3schools"] {color: hsl(122, 39%, 49%);}
+
+/* Con esto afectamos a todo vínculo cuya relación sea nofollow */
+a[rel=nofollow]{font-weight:bold;}
+
+/* Acá tenemos pseudo-elementos, usan doble dos puntos.
+Pueden aprender más de pseudo-elementos consultando:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements */
+
+::selection{
+  background-color:rgba(255,155,0,.9);
+}
+
+p.elegante::first-letter{
+color:rgba(0,0,0,.75);
+font-size:300%;
+line-height: 1;
+margin-right:-0.1em;
+}
+
+p.elegante::after{
+color:rgba(0,0,0,.5);
+content:" [colorín colorado, este párrafo se ha acabado]";
+}
+
+/* Cuando usamos solo dos puntos, estamos definiendo pseudo-clases.
+A continuación encontrarán algunos ejemplos, y se recomienda revisar:
+https://developer.mozilla.org/en-US/docs/Web/CSS/pseudo-classes
+*/
+
+/* con esto afectamos a los vínculos cuando el mouse se posiciona sobre ellos */
+a:hover{
+  color:rgba(255,255,255,.9);
+  background:rgba(0,0,0,.9);
+  text-decoration: none;
+}
+
+/* con esto afectamos al último div que tenga la clase col-sm-6 en una fila*/
+div.col-sm-6:last-child{
+  background:rgba(255,75,0,.25);
+}
+
+/* Con esto afectamos a todo lo que se declare como escrito en inglés,
+pueden ver otros lenguajes en https://www.w3schools.com/tags/ref_language_codes.asp */
+:lang(en){font-weight:bold; font-style: italic;}
+
+/* LOS AJUSTES QUE SIGUEN SON TRADICIONALES,
+VIENEN A COMPLEMENTAR O CONTRADECIR LO QUE ESTABLECE BOOTSTRAP.MIN.CSS */
+
+.row{margin-top:0.25em; margin-bottom:0.25em;}
+
+p, ul, ol{
+  background:rgba(240,240,240,1); /* lo mejor sería sacar este fondo */
+  padding:1em 0.5em;
+}
+
+/* Con esto contradigo algo de Bootstrap */
+ul li{
+  list-style-position: inside;
+}
+
+p.elegante{
+  font-family: 'Source Serif Pro', serif;
+  font-size:110%;
+  margin-bottom:3em;
+}
+
+@media screen and (max-width:767px){
+  p.elegante{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+    hyphens: auto;
+  }
+}
+
+/* Este ajuste lo hago sobre los títulos, para alinearlos con párrafos y listados */
+
+h1{padding-left:0.15em;}
+h2{padding-left:0.2em;}

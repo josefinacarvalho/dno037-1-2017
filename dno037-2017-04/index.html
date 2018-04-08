@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cuarta clase: Diseño y Nuevos Medios</title>
+    <!-- Search Engine -->
+    <meta name="description" content="Primer ejercicio con Bootstrap 3">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Cuarta clase | Diseño y Nuevos Medios">
+    <meta itemprop="description" content="Primer ejercicio con Bootstrap 3">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Cuarta clase | Diseño y Nuevos Medios">
+    <meta name="twitter:description" content="Primer ejercicio con Bootstrap 3">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Cuarta clase | Diseño y Nuevos Medios">
+    <meta name="og:description" content="Primer ejercicio con Bootstrap 3">
+    <meta name="og:site_name" content="Cuarta clase">
+    <meta name="og:locale" content="es_CL">
+    <meta name="og:type" content="website">
+    <!-- Los estilos, el bootstrap.min.css está dentro de una carpeta, estilo.css no. -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 id="arriba">Bootstrap 3</h1>
+          <h2>Front-End Framework</h2>
+          <p lang="en">Bootstrap is the most popular HTML, CSS, and JavaScript framework
+            for developing responsive, mobile-first web sites.</p>
+          <p>Así como Bootstrap, <a href="https://www.keycdn.com/blog/front-end-frameworks/" rel="nofollow" title="Top 10 Front-End Frameworks of 2016">existen otros <span lang="en">Front-End frameworks</span></a>
+            que nos permiten implementar rápidamente sitios web adaptables o
+            <span lang="en">responsive</span>: Sitios compuestos por páginas cuya
+            apariencia se adapta al dispositivo que se utilice para visualizarlas,
+            sea que se trate de un <a href="http://screensiz.es/phone" rel="nofollow" title="Screen Sizes">smartphone</a>,
+            <a href="http://screensiz.es/tablet" rel="nofollow" title="Screen Sizes">tablet</a> o
+            <a href="http://screensiz.es/monitor" rel="nofollow" title="Screen Sizes">monitor de computador</a>.</p>
+
+          <p>Por defecto, Bootstrap ofrece un contenedor<sup>1</sup>, que puede ser de ancho fijo (<code>container</code>) o variable para ocupar toda la pantalla (<code>container-fluid</code>) &gt; dentro de cada contenedor hay filas que ocupan todo el ancho (<code>row</code>) &gt; dentro de cada fila hay hasta 12 columnas (<code>col</code>).</p>
+          <p>Cada vez que usamos las columnas de Bootstrap debemos usar una clase que comience con <code>col</code>.</p>
+          <p>Después de <code>col</code>, debe establecerse el tamaño de pantalla en el que se piensa<sup>2</sup>, acaso sea eXtra Small (<code>-xs-</code>), SMall (<code>-sm-</code>), MeDium (<code>-md-</code>) o LarGe (<code>-lg-</code>).</p>
+          <p>Finalmente, se indica cuántas columnas, de <code>12</code>, quiero usar en una fila.</p>
+          <p>Así, por ejemplo, puedo indicar que quiero usar 12 columnas en el caso de una pantalla pequeña, escribiendo <code>col-sm-12</code></p>
+          <p><small>1. Cuando se usa contenedor de ancho fijo (<code>container</code>), este ocupa toda la pantalla en <code>xs</code>, pero mide 750px en pantallas <code>sm</code>, 970px en pantallas <code>md</code> y 1170 px en pantallas <code>lg</code>.</small></p>
+          <p><small>2. Hace tiempo que Bootstrap está anunciando su versión 4. En esa nueva versión se <a href="https://v4-alpha.getbootstrap.com/layout/grid/#grid-options" rel="nofollow" target="_blank">modificarían los criterios para tamaños de pantalla y otras cosas</a>.</small></p>
+        </div>
+        <!--Podemos sumar las 12 columnas según situaciones de pantalla-->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <p>También pueden indicarse varias opciones para un mismo caso, separando la definición con un espacio. Por ejemplo, si escribo <code>col-xs-12 col-sm-6 col-md-4 col-lg-3</code>, estoy diciendo que en algo debe usar 12 columnas en pantallas menores a 768px (tamaño xs), debe usar 6 columnas en pantallas entre 768 y 992px (tamaño sm), debe usar 4 columnas en pantallas entre 992 y 1200px (tamaño md), y debe usar 3 columnas en pantallas superiores a 1200px (tamaño lg)</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <p>También pueden indicarse varias opciones para un mismo caso, separando la definición con un espacio. Por ejemplo, si escribo <code>col-xs-12 col-sm-6 col-md-4 col-lg-3</code>, estoy diciendo que en algo debe usar 12 columnas en pantallas menores a 768px (tamaño xs), debe usar 6 columnas en pantallas entre 768 y 992px (tamaño sm), debe usar 4 columnas en pantallas entre 992 y 1200px (tamaño md), y debe usar 3 columnas en pantallas superiores a 1200px (tamaño lg)</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <p>También pueden indicarse varias opciones para un mismo caso, separando la definición con un espacio. Por ejemplo, si escribo <code>col-xs-12 col-sm-6 col-md-4 col-lg-3</code>, estoy diciendo que en algo debe usar 12 columnas en pantallas menores a 768px (tamaño xs), debe usar 6 columnas en pantallas entre 768 y 992px (tamaño sm), debe usar 4 columnas en pantallas entre 992 y 1200px (tamaño md), y debe usar 3 columnas en pantallas superiores a 1200px (tamaño lg)</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <p>También pueden indicarse varias opciones para un mismo caso, separando la definición con un espacio. Por ejemplo, si escribo <code>col-xs-12 col-sm-6 col-md-4 col-lg-3</code>, estoy diciendo que en algo debe usar 12 columnas en pantallas menores a 768px (tamaño xs), debe usar 6 columnas en pantallas entre 768 y 992px (tamaño sm), debe usar 4 columnas en pantallas entre 992 y 1200px (tamaño md), y debe usar 3 columnas en pantallas superiores a 1200px (tamaño lg)</p>
+        </div>
+      </div><!--/row-->
+      <div class="row">
+        <!--2 veces 6 = 12-->
+        <div class="col-sm-6"><p>En este caso uso 6 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-6</code>)</p></div>
+        <div class="col-sm-6"><p>En este caso uso 6 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-6</code>)</p></div>
+      </div><!--/row-->
+      <div class="row">
+        <!-- 3 veces 4 = 12-->
+        <div class="col-sm-4"><p>En este caso uso 4 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-4</code>)</p></div>
+        <div class="col-sm-4"><p>En este caso uso 4 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-4</code>)</p></div>
+        <div class="col-sm-4"><p>En este caso uso 4 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-4</code>)</p></div>
+      </div><!--/row-->
+      <div class="row">
+        <!-- 4 veces 3 = 12-->
+        <div class="col-sm-3"><p>En este caso uso 3 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-3</code>)</p></div>
+        <div class="col-sm-3"><p>En este caso uso 3 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-3</code>)</p></div>
+        <div class="col-sm-3"><p>En este caso uso 3 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-3</code>)</p></div>
+        <div class="col-sm-3"><p>En este caso uso 3 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-3</code>)</p></div>
+      </div><!--/row-->
+      <div class="row">
+        <!-- 6 veces 2 = 12-->
+        <div class="col-sm-2"><p>En este caso uso 2 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-3</code>)</p></div>
+        <div class="col-sm-2"><p>En este caso uso 2 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-3</code>)</p></div>
+        <div class="col-sm-2"><p>En este caso uso 2 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-3</code>)</p></div>
+        <div class="col-sm-2"><p>En este caso uso 2 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-3</code>)</p></div>
+        <div class="col-sm-2"><p>En este caso uso 2 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-3</code>)</p></div>
+        <div class="col-sm-2"><p>En este caso uso 2 de 12 columnas, si es que el ancho de la pantalla del navegador es mayor o igual a 768px (<code>col-sm-3</code>)</p></div>
+      </div><!--/row-->
+      <div class="row">
+        <!--También pueden sumar 12 con offset-->
+        <div class="col-sm-8 col-sm-offset-2">
+          <p>También puedo seleccionar solo 8 columnas y desplazarla a la derecha en la anchura equivalente a 2 columnas</p>
+          <p>Y además de 12 columnas en una fila, Bootstrap ofrece varias definiciones de estilo, que nos permiten prototipar rápidamente, e iterar sobre el prototipo hasta convertirlo en producto final.</p>
+          <p>Según avance esta clase, podríamos buscar otras definciones. Pero, en lo inmediato, tendríamos que hacernos cargo de un tema que quedó pendiente la semana anterior:</p> <blockquote cite="https://github.com/profesorfaco/dno037-2017-04">"opciones de selectores para una regla CSS, poniendo especial atención a los selectores de atributos, además de las pseudo clases y pseudo elementos."</blockquote>
+          <p>Ya en esta página se han utilizado algunos selectores de atributos, a los que corresponde sumar unos que permiten diferenciar:</p>
+          <ul>
+            <li><a href="#arriba">vínculos que van a la misma página</a></li>
+            <li><a href="cheat-sheet.pdf">vínculos que apuntan a determinadas extensiones (tales como pdf).</a></li>
+            <li><a href="https://www.w3schools.com/css/css3_intro.asp">vinculos que apunten a una URL que incluya una palabra particular</a></li>
+          </ul>
+          <p class="elegante">Podemos seguir con un pseude-elemento para ese párrafo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae finibus justo, in elementum tellus. Quisque in quam arcu. Nullam feugiat felis sodales, pellentesque tortor mattis, ullamcorper nulla. Vivamus blandit suscipit tempor. Aliquam nullam. Suspendisse in massa at urna gravida congue sed quis ligula. Nullam et libero mi. Etiam sit amet malesuada mauris. Phasellus suscipit bibendum dolor, in aliquet quam feugiat id. Cras hendrerit, metus vitae vestibulum egestas, felis risus venenatis justo, eget vehicula dui lacus sit amet risus. Quisque maximus tortor placerat nisi gravida consectetur. Praesent id metus vel mi imperdiet tempus. Vivamus tincidunt augue in gravida blandit. Sed risus orci, pharetra at bibendum vitae, placerat pharetra turpis. Duis ac erat eget erat placerat maximus.</p>
+        </div>
+      </div><!--/row-->
+    </div><!--/container-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
